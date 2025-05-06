@@ -6,6 +6,8 @@ sudo apt -y upgrade
 sudo apt install python3
 #installing pip
 sudo apt install python3-pip
+#installing jupyter-core for notebooks
+sudo apt -y install jupyter-core
 
 #installing docker
 #curl -fsSL https://get.docker.com -o get-docker.sh
@@ -23,6 +25,7 @@ sudo apt -y install python3-keystoneclient
 pip install pandas
 pip install numpy
 pip install -U scikit-learn
+pip install -U "ray[default,tune,train,data]"
 #don't need tensorflow
 #python3 -m pip install 'tensorflow[and-cuda]'
 

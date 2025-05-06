@@ -28,14 +28,14 @@ pip install -U scikit-learn
 pip install -U "ray[default,tune,train,data]"
 pip install jupyter
 #don't need tensorflow
-#python3 -m pip install 'tensorflow[and-cuda]'
+#python3 -m pip install 'tensorflow'
 
 #showing installations 
 python3 -c "import pandas as pd; print('Pandas Version:',pd.__version__)"
 python3 -c "import numpy as np; print('Numpy Version:', np.__version__)"
 python3 -c "import sklearn; print('Sklearn Versions:',sklearn.show_versions())"
 #didn't need tensor flow
-#python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+#python3 -c "import tensorflow as tf; print(tf.__version__)"
 #lists all installations
 pip list
 
@@ -53,3 +53,6 @@ pip --version
 #checking that open stack client was installed correctly
 openstack server list
 openstack image list
+
+echo "End of script"
+exit 0

@@ -8,7 +8,9 @@ Initially 1 VM from the Swedish Science cloud will have to be made. From that ma
 ```source <some-string>_openrc.sh```  
 ```./script.sh```  
 
-  I think the `./script.sh` command can be run anywhere or you can copy the script to the `/home/ubuntu/` directory and run it. I don't think it matters.
+  I think the `./script.sh` command can be run anywhere or you can copy the script to the `/home/ubuntu/` directory and run it. I don't think it matters. You can also set up jupyter server from this link https://jupyter-server.readthedocs.io/en/stable/operators/public-server.html and if the command `jupyter server` is not found make sure that your `PATH` environment points to it with the following command  
+  `export PATH=$PATH:~/.local/bin`  
+  To connect to the notebook type `https://Floating-IP-Address:port` in search bar and ignore all warnings.  
 
 ### Setting up other VMs  
 Since we will need 2 other VMs anyways, I thought it would be cool to set them up from the master VM on the swedish science cloud as done in Assignment 3. 

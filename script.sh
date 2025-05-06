@@ -26,6 +26,7 @@ pip install pandas
 pip install numpy
 pip install -U scikit-learn
 pip install -U "ray[default,tune,train,data]"
+pip install jupyter
 #don't need tensorflow
 #python3 -m pip install 'tensorflow[and-cuda]'
 

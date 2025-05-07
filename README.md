@@ -13,6 +13,10 @@ Initially 1 VM from the Swedish Science cloud will have to be made. From that ma
   To connect to the notebook type `https://Floating-IP-Address:port` in search bar and ignore all warnings.  
 
 ### Setting up other VMs  
-Since we will need 2 other VMs anyways, I thought it would be cool to set them up from the master VM on the swedish science cloud as done in Assignment 3. Do start up instances of 2 more VMs to run the distributed ML naviagte to the openstack folder. Go into the `Start_Workers.py` file and modify the flavor, image, network, and descriptive names in this file. Also add a security group that is open Ingress and Egress on port 6379 since this is the default port for Ray Tune. Save the file and make sure that you have run `source <some-string>_openrc.sh` before running `python3 Start_Workers.py` in the terminal. Once the instances have been created, all of the needed libraries should be installed. This may take 10-15 minutes for both VMs to be up and running. 
+Since we will need 2 other VMs anyways, I thought it would be cool to set them up from the master VM on the swedish science cloud as done in Assignment 3. Do start up instances of 2 more VMs to run the distributed ML naviagte to the openstack folder. Go into the `Start_Workers.py` file and modify the flavor, image, network, and descriptive names in this file. Also add a security group that is open Ingress and Egress on port 6379 since this is the default port for Ray Tune. Save the file and make sure that you have run `source <some-string>_openrc.sh` before running `python3 Start_Workers.py` in the terminal. Once the instances have been created, all of the needed libraries should be installed. This may take 10-15 minutes for both VMs to be up and running.  
+
+> [!NOTE]  
+> For some reason not all the packages and dependices were installed on the second VM. In the start up you may have to specifiy its own userdata file separately.
+
 
 ### Distributed ML
